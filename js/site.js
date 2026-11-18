@@ -93,9 +93,16 @@
     }
     marquee.addEventListener('mouseenter', function () { hovered = true; });
     marquee.addEventListener('mouseleave', function () { hovered = false; });
-    marquee.addEventListener('pointerdown', function () { touching = true; });
-    window.addEventListener('pointerup', function () { touching = false; resumeAt = performance.now() + 2000; });
-    window.addEventListener('pointercancel', function () { touching = false; });
+    /** Pausa la animación mientras el usuario mueve el carrusel y 2 s después. */
+    function holdStart() { touching = true; }
+    function holdEnd() { if (touching) { touching = false; resumeAt = performance.now() + 2000; } }
+    marquee.addEventListener('pointerdown', holdStart);
+    marquee.addEventListener('touchstart', holdStart, { passive: true });
+    window.addEventListener('pointerup', holdEnd);
+    // En táctil el navegador cancela el puntero al tomar el scroll: también cuenta como gesto.
+    window.addEventListener('pointercancel', holdEnd);
+    window.addEventListener('touchend', holdEnd, { passive: true });
+    window.addEventListener('touchcancel', holdEnd, { passive: true });
     marquee.addEventListener('wheel', function () { resumeAt = performance.now() + 2000; }, { passive: true });
     motion.addEventListener('change', configureMarquee);
     configureMarquee();
