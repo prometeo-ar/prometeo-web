@@ -93,16 +93,20 @@
     }
     marquee.addEventListener('mouseenter', function () { hovered = true; });
     marquee.addEventListener('mouseleave', function () { hovered = false; });
-    /** Pausa la animación mientras el usuario mueve el carrusel y 2 s después. */
+    var lastSet = -1;
+    /** Pausa mientras el dedo está apoyado. */
     function holdStart() { touching = true; }
-    function holdEnd() { if (touching) { touching = false; resumeAt = performance.now() + 2000; } }
-    marquee.addEventListener('pointerdown', holdStart);
+    function holdEnd() { touching = false; resumeAt = performance.now() + 2000; }
     marquee.addEventListener('touchstart', holdStart, { passive: true });
-    window.addEventListener('pointerup', holdEnd);
-    // En táctil el navegador cancela el puntero al tomar el scroll: también cuenta como gesto.
-    window.addEventListener('pointercancel', holdEnd);
+    marquee.addEventListener('pointerdown', function (e) { if (e.pointerType !== 'touch') holdStart(); });
     window.addEventListener('touchend', holdEnd, { passive: true });
     window.addEventListener('touchcancel', holdEnd, { passive: true });
+    window.addEventListener('pointerup', function (e) { if (e.pointerType !== 'touch') holdEnd(); });
+    // Cualquier movimiento que no hizo la animación (dedo, inercia, trackpad, teclado)
+    // corre la pausa: así no retoma en plena inercia y no "rebota".
+    marquee.addEventListener('scroll', function () {
+      if (Math.abs(marquee.scrollLeft - lastSet) > 2) resumeAt = performance.now() + 2000;
+    }, { passive: true });
     marquee.addEventListener('wheel', function () { resumeAt = performance.now() + 2000; }, { passive: true });
     motion.addEventListener('change', configureMarquee);
     configureMarquee();
@@ -119,6 +123,7 @@
         position += delta * 0.028;
         if (loopWidth > 0) position %= loopWidth;
         marquee.scrollLeft = position;
+        lastSet = marquee.scrollLeft;
       } else {
         position = marquee.scrollLeft;
       }
