@@ -3,7 +3,12 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Prometeo — Implementación de Odoo</title>
+<title>Prometeo — Tecnología para hacer crecer tu negocio</title>
+<meta name="description" content="Prometeo: implementación de Odoo, software a medida, campañas de marketing, automatizaciones y CobraYa, la app de venta y cobranza en cuotas. Equipo argentino.">
+<meta property="og:title" content="Prometeo — Tecnología para hacer crecer tu negocio">
+<meta property="og:description" content="Odoo, software a medida, campañas de marketing y CobraYa. Un solo equipo, en español y a tu lado.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://prometeo.com.ar/">
 <link rel="icon" href="assets/prometeo-mark.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -19,108 +24,186 @@
       <span>Prometeo</span>
     </a>
     <nav class="nav-links" id="navLinks">
-      <a href="#servicios">Servicios</a>
+      <a href="#soluciones">Soluciones</a>
+      <a href="#cobraya">CobraYa</a>
       <a href="#casos">Clientes</a>
       <a href="#nosotros">Nosotros</a>
-      <a href="#planes">Planes</a>
-      <a href="https://wiki.prometeo.com.ar" target="_blank">Wiki</a>
-      <a href="#demo" class="btn btn-fire">Agendar demo</a>
+      <a href="https://wiki.prometeo.com.ar" target="_blank" rel="noopener">Wiki</a>
+      <a href="#contacto" class="btn btn-fire">Hablemos</a>
     </nav>
     <button class="nav-burger" id="navBurger" aria-label="Menú"><span></span><span></span><span></span></button>
   </div>
 </header>
 
-<section class="hero" id="inicio" data-screen-label="Hero">
+<!-- ============ HERO ============ -->
+<section class="hero" id="inicio">
   <div class="hex-field"></div>
+  <div class="hero-orb orb-a"></div>
+  <div class="hero-orb orb-b"></div>
   <div class="container hero-grid">
     <div>
-      <h1>Tu empresa ya tiene el potencial. Nosotros traemos <em>el fuego</em>.</h1>
-      <p class="lede">Implementamos Odoo de punta a punta para que tu operación —ventas, stock, contabilidad, todo— funcione en un solo sistema. Sin vueltas, en español y a tu lado.</p>
+      <p class="pill"><span class="dot"></span> Software · Marketing · Automatización</p>
+      <h1>La tecnología que tu negocio necesita para <em>crecer</em>.</h1>
+      <p class="lede">Sistemas de gestión, software a medida, campañas que venden y apps propias como CobraYa. Un solo equipo argentino que entiende tu negocio y se queda a tu lado.</p>
       <div class="hero-actions">
-        <a href="#demo" class="btn btn-fire btn-lg">Agendar una demo</a>
-        <a href="#servicios" class="btn btn-ghost-dark btn-lg">Ver servicios</a>
+        <a href="#contacto" class="btn btn-fire btn-lg">Contanos tu proyecto</a>
+        <a href="#soluciones" class="btn btn-ghost-dark btn-lg">Ver soluciones</a>
       </div>
       <div class="hero-meta">
-        <div class="m"><b>+40</b><small>implementaciones</small></div>
-        <div class="m"><b>3 años</b><small>con Odoo</small></div>
-        <div class="m"><b>Argentina</b><small>y LATAM</small></div>
+        <div class="m"><b>+40</b><small>proyectos implementados</small></div>
+        <div class="m"><b>7</b><small>soluciones integradas</small></div>
+        <div class="m"><b>24 hs</b><small>tiempo de respuesta</small></div>
       </div>
     </div>
-    <div class="hero-mark">
+    <div class="hero-visual" aria-hidden="true">
       <div class="hero-glow"></div>
-      <img src="assets/prometeo-mark.svg" alt="">
+      <img class="hero-logo" src="assets/prometeo-mark.svg" alt="">
+      <div class="float-card fc-1"><span class="fc-ico fire">↗</span><div><b>Campaña enviada</b><small>aperturas en tiempo real</small></div></div>
+      <div class="float-card fc-2"><span class="fc-ico cyan">✓</span><div><b>Cobro registrado</b><small>CobraYa · cuota 4 de 12</small></div></div>
+      <div class="float-card fc-3"><span class="fc-ico fire">⚡</span><div><b>Stock sincronizado</b><small>Odoo ↔ tienda online</small></div></div>
     </div>
   </div>
 </section>
 
-<section class="section" id="servicios" data-screen-label="Servicios">
+<!-- ============ FRANJA DE CONFIANZA ============ -->
+<div class="trust-strip">
+  <div class="container trust-inner">
+    <span>Trabajamos con</span>
+    <b>Odoo</b><i></i><b>Mercado Pago</b><i></i><b>AFIP / ARCA</b><i></i><b>WhatsApp</b><i></i><b>Google Cloud</b><i></i><b>Tiendas online</b>
+  </div>
+</div>
+
+<!-- ============ SOLUCIONES (bento) ============ -->
+<section class="section" id="soluciones">
   <div class="container">
     <div class="section-head reveal">
-      <p class="kicker">Servicios</p>
-      <h2>Todo el ciclo de vida de tu Odoo, cubierto.</h2>
-      <p class="sub">Desde la primera consultoría hasta el soporte del día a día. Un solo equipo, sin intermediarios.</p>
+      <p class="kicker">Soluciones</p>
+      <h2>Todo lo que tu empresa necesita, en un solo lugar.</h2>
+      <p class="sub">Elegí por dónde empezar. Cada solución funciona sola, y juntas multiplican el resultado.</p>
     </div>
-    <div class="services-grid">
-      <article class="svc reveal">
-        <div class="svc-ico"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="14" height="14" rx="2"></rect><path d="M3 8h14M8 8v9"></path></svg></div>
+
+    <div class="bento">
+      <article class="tile tile-lg tile-odoo reveal">
+        <div class="tile-ico"><svg width="22" height="22" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="14" height="14" rx="2"/><path d="M3 8h14M8 8v9"/></svg></div>
+        <p class="tile-tag">Sistema de gestión</p>
         <h3>Implementación de Odoo</h3>
-        <p>Puesta en marcha completa: relevamiento, configuración, datos y salida a producción acompañada.</p>
+        <p>Ventas, stock, compras, facturación electrónica y contabilidad en un solo sistema. Lo ponemos en marcha, migramos tus datos y capacitamos a tu equipo.</p>
+        <ul class="ticks">
+          <li>Punto de venta y facturación AFIP</li>
+          <li>Migraciones de versión sin perder datos</li>
+          <li>Soporte en español con respuesta en 24 hs</li>
+        </ul>
+        <a class="tile-link" href="#contacto" data-interes="Implementar o mejorar Odoo">Quiero Odoo →</a>
       </article>
-      <article class="svc reveal">
-        <div class="svc-ico"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M7 4 3 10l4 6M13 4l4 6-4 6"></path></svg></div>
-        <h3>Desarrollo a medida</h3>
-        <p>Módulos propios cuando el estándar no alcanza. Código limpio, documentado y preparado para migrar.</p>
+
+      <article class="tile tile-mkt reveal">
+        <div class="tile-ico"><svg width="22" height="22" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 8v4l9 4V4z"/><path d="M12 7c2 0 3 1.3 3 3s-1 3-3 3M6 12v4"/></svg></div>
+        <p class="tile-tag">Marketing</p>
+        <h3>Campañas que venden</h3>
+        <p>Email marketing y WhatsApp con tu propia base de clientes: segmentación, diseño de piezas y métricas de apertura y clics.</p>
+        <a class="tile-link" href="#contacto" data-interes="Campañas de marketing">Lanzar una campaña →</a>
       </article>
-      <article class="svc reveal">
-        <div class="svc-ico"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="5" cy="10" r="2.5"></circle><circle cx="15" cy="4.5" r="2.5"></circle><circle cx="15" cy="15.5" r="2.5"></circle><path d="M7.2 8.9l5.6-3.2M7.2 11.1l5.6 3.2"></path></svg></div>
+
+      <article class="tile tile-dev reveal">
+        <div class="tile-ico"><svg width="22" height="22" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M7 4 3 10l4 6M13 4l4 6-4 6"/></svg></div>
+        <p class="tile-tag">A medida</p>
+        <h3>Software para tu negocio</h3>
+        <p>Apps web y móviles hechas para tu forma de trabajar, no al revés. Si tu proceso es único, tu software también.</p>
+        <a class="tile-link" href="#contacto" data-interes="Software a medida">Contar mi idea →</a>
+      </article>
+
+      <article class="tile reveal">
+        <div class="tile-ico cyan"><svg width="22" height="22" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M11 2 4 11h5l-1 7 7-9h-5z"/></svg></div>
+        <h3>Automatizaciones y bots</h3>
+        <p>Avisos de pago por WhatsApp, recordatorios, reportes que llegan solos. Menos tareas repetitivas, más tiempo para vender.</p>
+      </article>
+
+      <article class="tile reveal">
+        <div class="tile-ico cyan"><svg width="22" height="22" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 17V9M8 17V4M13 17v-6M18 17H2"/></svg></div>
+        <h3>Tableros y reportes</h3>
+        <p>Tus números del día en una pantalla: ventas, márgenes, stock, deudores. Decisiones con datos, no con intuición.</p>
+      </article>
+
+      <article class="tile reveal">
+        <div class="tile-ico cyan"><svg width="22" height="22" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="5" cy="10" r="2.5"/><circle cx="15" cy="4.5" r="2.5"/><circle cx="15" cy="15.5" r="2.5"/><path d="M7.2 8.9l5.6-3.2M7.2 11.1l5.6 3.2"/></svg></div>
         <h3>Integraciones</h3>
-        <p>E-commerce, bancos, AFIP, logística y APIs de terceros conectados con tu Odoo, sin doble carga.</p>
+        <p>Mercado Pago, bancos, AFIP, tiendas online y logística conectados entre sí. Se acabó cargar dos veces lo mismo.</p>
       </article>
-      <article class="svc reveal">
-        <div class="svc-ico"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M10 3v7l4 3"></path><circle cx="10" cy="10" r="7.5"></circle></svg></div>
-        <h3>Migración de versión</h3>
-        <p>Actualizamos tu Odoo a la última versión preservando datos, personalizaciones e historial.</p>
-      </article>
-      <article class="svc reveal">
-        <div class="svc-ico"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 16c2-5 5-8 8-9M11 4h5v5"></path><path d="M3 16h14"></path></svg></div>
-        <h3>Consultoría de procesos</h3>
-        <p>Antes de configurar, ordenamos: mapeamos tus procesos y los simplificamos sobre el estándar de Odoo.</p>
-      </article>
-      <article class="svc reveal">
-        <div class="svc-ico"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M10 2 3 6v5c0 4 3.5 6.5 7 7 3.5-.5 7-3 7-7V6z"></path></svg></div>
+      <article class="tile reveal">
+        <div class="tile-ico cyan"><svg width="22" height="22" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M10 2 3 6v5c0 4 3.5 6.5 7 7 3.5-.5 7-3 7-7V6z"/></svg></div>
         <h3>Soporte y mantenimiento</h3>
-        <p>Mesa de ayuda en español, monitoreo y mejoras continuas con SLA claros. Nunca estás solo.</p>
-      </article>
-      <article class="svc reveal">
-        <div class="svc-ico"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 6.5 10 3l8 3.5-8 3.5z"></path><path d="M5.5 8.5V13c0 1.5 9 1.5 9 0V8.5M18 6.5V11"></path></svg></div>
-        <h3>Formación</h3>
-        <p>Capacitamos a tu equipo por rol —ventas, depósito, administración— para que Odoo se use de verdad.</p>
+        <p>Mesa de ayuda en español, monitoreo, backups y mejoras continuas. Tu sistema siempre funcionando.</p>
       </article>
     </div>
   </div>
 </section>
 
-<section class="section process" data-screen-label="Cómo trabajamos">
+<!-- ============ PRODUCTO: COBRAYA ============ -->
+<section class="section product" id="cobraya">
+  <div class="hex-field"></div>
+  <div class="container product-grid">
+    <div class="reveal">
+      <p class="kicker cool">Producto Prometeo</p>
+      <h2>CobraYa: vendé y cobrá en cuotas <em>desde el celular</em>.</h2>
+      <p class="sub">La app para fábricas y comercios que venden a plazos con vendedores y cobradores en la calle. Cada venta, cada cuota y cada rendición, en tiempo real.</p>
+      <ul class="feature-list">
+        <li><span><b>Venta en la calle.</b> El vendedor carga cliente, producto y plan de cuotas en un minuto.</span></li>
+        <li><span><b>Agenda de cobro.</b> El cobrador ve a quién visitar hoy y registra el pago al instante.</span></li>
+        <li><span><b>Rendiciones claras.</b> Lo cobrado contra lo entregado, con diferencias a la vista.</span></li>
+        <li><span><b>Mora bajo control.</b> Clientes atrasados, antecedentes y tablero con indicadores.</span></li>
+      </ul>
+      <div class="hero-actions">
+        <a href="#contacto" class="btn btn-fire btn-lg" data-interes="CobraYa">Pedir una demo de CobraYa</a>
+      </div>
+    </div>
+
+    <div class="phone-wrap reveal" aria-hidden="true">
+      <div class="phone">
+        <div class="phone-notch"></div>
+        <div class="phone-screen">
+          <div class="ps-head">
+            <small>Hoy · 12 visitas</small>
+            <b>Mi agenda</b>
+          </div>
+          <div class="ps-kpi">
+            <div><small>Cobrado</small><b>$ 184.500</b></div>
+            <div><small>Pendiente</small><b>$ 62.000</b></div>
+          </div>
+          <div class="ps-row"><span class="av">RM</span><div><b>Rosa Medina</b><small>Cuota 4 de 12</small></div><span class="chip ok">Pagó</span></div>
+          <div class="ps-row"><span class="av">JF</span><div><b>Julio Ferreyra</b><small>Cuota 7 de 10</small></div><span class="chip today">Hoy</span></div>
+          <div class="ps-row"><span class="av">MS</span><div><b>Marta Sosa</b><small>Cuota 2 de 6</small></div><span class="chip late">12 días</span></div>
+          <div class="ps-btn">Registrar cobro</div>
+        </div>
+      </div>
+      <div class="phone-glow"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ MÉTODO ============ -->
+<section class="section process">
   <div class="container">
     <div class="section-head reveal">
-      <p class="kicker cool">Método</p>
+      <p class="kicker">Método</p>
       <h2>Cómo encendemos tu operación</h2>
+      <p class="sub">El mismo camino para un sistema de gestión, una app o una campaña: primero entender, después construir.</p>
     </div>
     <div class="steps">
-      <div class="step reveal"><b class="num">01 — Chispa</b><h3>Relevamiento</h3><p>Entendemos tu negocio, tus procesos y tus dolores. Definimos alcance y prioridades juntos.</p></div>
-      <div class="step reveal"><b class="num">02 — Llama</b><h3>Configuración</h3><p>Armamos tu Odoo sobre el estándar, migramos datos y desarrollamos solo lo que hace falta.</p></div>
-      <div class="step reveal"><b class="num">03 — Fuego</b><h3>Salida en vivo</h3><p>Capacitamos a tu equipo y acompañamos la puesta en producción día a día, hasta que fluya.</p></div>
-      <div class="step reveal"><b class="num">04 — Brasa</b><h3>Evolución</h3><p>Soporte continuo, mejoras y nuevas etapas a medida que tu empresa crece.</p></div>
+      <div class="step reveal"><b class="num">01 — Chispa</b><h3>Escuchamos</h3><p>Conocemos tu negocio, tus números y tus dolores. Definimos juntos qué resolver primero.</p></div>
+      <div class="step reveal"><b class="num">02 — Llama</b><h3>Diseñamos</h3><p>Te mostramos la solución antes de construirla. Sin sorpresas de alcance ni de precio.</p></div>
+      <div class="step reveal"><b class="num">03 — Fuego</b><h3>Lanzamos</h3><p>Ponemos todo en marcha, capacitamos a tu equipo y acompañamos el día a día hasta que fluya.</p></div>
+      <div class="step reveal"><b class="num">04 — Brasa</b><h3>Mejoramos</h3><p>Medimos resultados y seguimos sumando mejoras a medida que tu empresa crece.</p></div>
     </div>
   </div>
 </section>
 
-<section class="section" id="casos" data-screen-label="Clientes">
+<!-- ============ CLIENTES ============ -->
+<section class="section" id="casos">
   <div class="container">
     <div class="section-head reveal">
       <p class="kicker">Nuestros clientes</p>
       <h2>Empresas que confían en Prometeo</h2>
-      <p class="sub">Conocé algunas de las empresas que nos eligen para acompañar su operación.</p>
+      <p class="sub">Comercios y PyMEs que ya trabajan con nuestras soluciones todos los días.</p>
     </div>
     <div class="clients-marquee" id="clientsMarquee" role="region" aria-label="Empresas clientes" tabindex="0">
     <div class="cases-grid">
@@ -169,86 +252,43 @@
   </div>
 </section>
 
-<section class="section whyname" id="nombre" data-screen-label="Por qué Prometeo">
+<!-- ============ NOSOTROS ============ -->
+<section class="section whyname" id="nosotros">
   <div class="container whyname-inner">
     <img class="whyname-mark reveal" src="assets/prometeo-mark.svg" alt="">
     <div class="reveal">
-      <p class="kicker">El nombre</p>
-      <h2>¿Por qué Prometeo?</h2>
-      <div class="whyname-story">
-        <p>En el mito griego, Prometeo tomó la llama que era privilegio de los dioses y la entregó a la humanidad. Con ella, las personas pudieron crear, producir y prosperar.</p>
-        <p>Nosotros hacemos lo mismo con la tecnología: <strong>tomamos herramientas que parecían reservadas a las grandes corporaciones —un ERP completo como Odoo— y las ponemos en manos de tu empresa.</strong> Esa es la llama de nuestro logo: conocimiento que se comparte para que otros crezcan.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="section about" id="nosotros" data-screen-label="Nosotros">
-  <div class="container about-grid">
-    <div class="reveal">
       <p class="kicker">Nosotros</p>
       <h2>Personas primero, software después.</h2>
-      <div class="story">
-        <p>Prometeo nace de una idea simple: <strong>la tecnología tiene que estar al servicio de la gente que trabaja</strong>, no al revés. Por eso implementamos Odoo escuchando primero y configurando después.</p>
-        <p>Somos un equipo argentino de consultores y desarrolladores que vive Odoo todos los días. Hablamos tu idioma —el de tu negocio y el del país— y nos quedamos a tu lado después de la salida en vivo.</p>
+      <div class="whyname-story">
+        <p>En el mito griego, Prometeo tomó el fuego de los dioses y lo entregó a la humanidad. Nosotros hacemos lo mismo con la tecnología: <strong>ponemos en manos de cualquier PyME las herramientas que antes solo tenían las grandes empresas.</strong></p>
+        <p>Somos un equipo argentino de desarrolladores, consultores e ingenieros de datos. Hablamos el idioma de tu negocio, respondemos rápido y nos quedamos después del lanzamiento.</p>
+      </div>
+      <div class="values">
+        <div><b>Cerca</b><small>Atención directa, sin intermediarios ni call center.</small></div>
+        <div><b>Claro</b><small>Alcance y precio definidos antes de empezar.</small></div>
+        <div><b>Para siempre</b><small>Soporte y mejoras mientras tu empresa crezca.</small></div>
       </div>
     </div>
   </div>
 </section>
 
-<section class="section" id="planes" data-screen-label="Planes">
-  <div class="container">
-    <div class="section-head reveal">
-      <p class="kicker">Planes</p>
-      <h2>Un plan para cada etapa</h2>
-      <p class="sub">Cada proyecto se cotiza según su alcance. Contanos tu caso y armamos una propuesta a medida.</p>
-    </div>
-    <div class="pricing-grid">
-      <article class="plan featured reveal">
-        <span class="flag">Más elegido</span>
-        <h3>Crecimiento</h3>
-        <p class="for">Para PyMEs que necesitan integrar toda su operación.</p>
-        <ul>
-          <li>Módulos a medida del negocio</li>
-          <li>Integraciones (AFIP, bancos, e-commerce)</li>
-          <li>Capacitación por rol</li>
-          <li>90 días de acompañamiento</li>
-          <li>Soporte con SLA</li>
-        </ul>
-        <a href="#demo" class="btn btn-fire">Consultar</a>
-      </article>
-      <article class="plan reveal">
-        <h3>Corporativo</h3>
-        <p class="for">Para grupos y empresas con operaciones complejas.</p>
-        <ul>
-          <li>Multi-compañía y consolidación</li>
-          <li>Desarrollos e integraciones complejas</li>
-          <li>Migraciones de versión</li>
-          <li>Equipo dedicado</li>
-        </ul>
-        <a href="#demo" class="btn btn-ghost">Hablar con nosotros</a>
-      </article>
-    </div>
-    <p class="pricing-note">Todos los planes incluyen relevamiento inicial sin cargo.</p>
-  </div>
-</section>
-
-<section class="section cta" id="demo" data-screen-label="Agendar demo">
+<!-- ============ CONTACTO ============ -->
+<section class="section cta" id="contacto">
   <div class="hex-field"></div>
   <div class="container cta-inner">
     <div class="reveal">
-      <h2>Vení a ver tu empresa funcionando en Odoo. <em>En vivo.</em></h2>
-      <p class="sub">Agendá una demo de 30 minutos: te mostramos Odoo con ejemplos de tu rubro y te llevás un diagnóstico inicial, sin compromiso.</p>
+      <h2>Contanos qué querés lograr. <em>Nosotros traemos el fuego.</em></h2>
+      <p class="sub">Una charla de 30 minutos, sin compromiso: entendemos tu caso y te decimos qué solución tiene sentido y cuánto cuesta.</p>
       <ul class="cta-points">
-        <li>Demo personalizada según tu industria</li>
         <li>Diagnóstico inicial sin cargo</li>
+        <li>Propuesta con alcance y precio cerrados</li>
         <li>Respuesta en menos de 24 hs</li>
       </ul>
     </div>
     <form class="demo-form reveal" id="demoForm" action="https://api.web3forms.com/submit" method="POST">
-      <h3>Agendar una demo</h3>
+      <h3>Hablemos</h3>
       <input type="hidden" name="access_key" value="__WEB3FORMS_KEY__">
-      <input type="hidden" name="subject" value="Nuevo pedido de demo — prometeo.com.ar">
+      <input type="hidden" name="subject" value="Nuevo contacto — prometeo.com.ar">
       <input type="hidden" name="from_name" value="Web Prometeo">
       <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off">
       <div class="row">
@@ -259,33 +299,52 @@
       <div><label for="f-telefono">Teléfono / WhatsApp</label><input id="f-telefono" name="telefono" type="tel" placeholder="+54 9 ..."></div>
       <div><label for="f-interes">¿Qué te interesa?</label>
         <select id="f-interes" name="interes">
-          <option>Implementar Odoo desde cero</option>
-          <option>Migrar de versión</option>
+          <option>Implementar o mejorar Odoo</option>
+          <option>CobraYa</option>
+          <option>Campañas de marketing</option>
+          <option>Software a medida</option>
+          <option>Automatizaciones y bots</option>
+          <option>Tableros y reportes</option>
           <option>Integraciones</option>
-          <option>Soporte / mejorar mi Odoo actual</option>
+          <option>Todavía no sé, quiero asesoramiento</option>
         </select>
       </div>
-      <button type="submit" class="btn btn-fire" id="formSubmit">Quiero mi demo</button>
-      <p class="form-err" id="formErr">No pudimos enviar tu pedido. Escribinos a <a href="mailto:alexis.medn@gmail.com">alexis.medn@gmail.com</a> y lo resolvemos.</p>
+      <button type="submit" class="btn btn-fire" id="formSubmit">Enviar</button>
+      <p class="form-err" id="formErr">No pudimos enviar tu mensaje. Escribinos a <a href="mailto:alexis.medn@gmail.com">alexis.medn@gmail.com</a> y lo resolvemos.</p>
       <div class="form-ok" id="formOk">
-        <b>¡Listo! Recibimos tu pedido.</b>
-        <p>Te escribimos en menos de 24 hs para coordinar día y horario.</p>
+        <b>¡Listo! Recibimos tu mensaje.</b>
+        <p>Te escribimos en menos de 24 hs para coordinar una charla.</p>
       </div>
     </form>
   </div>
 </section>
 
-<footer class="footer" data-screen-label="Footer">
-  <div class="container footer-inner">
-    <a class="logo" href="#inicio"><img src="assets/prometeo-mark.svg" alt=""><span>Prometeo</span></a>
+<footer class="footer">
+  <div class="container footer-grid">
+    <div>
+      <a class="logo" href="#inicio"><img src="assets/prometeo-mark.svg" alt=""><span>Prometeo</span></a>
+      <p class="footer-tag">Tecnología para hacer crecer tu negocio. Hecho en Argentina.</p>
+    </div>
     <nav>
-      <a href="#servicios">Servicios</a>
+      <b>Soluciones</b>
+      <a href="#soluciones">Odoo</a>
+      <a href="#soluciones">Software a medida</a>
+      <a href="#soluciones">Campañas de marketing</a>
+      <a href="#soluciones">Automatizaciones</a>
+    </nav>
+    <nav>
+      <b>Productos</b>
+      <a href="#cobraya">CobraYa</a>
+      <a href="https://wiki.prometeo.com.ar" target="_blank" rel="noopener">Wiki</a>
+    </nav>
+    <nav>
+      <b>Empresa</b>
       <a href="#casos">Clientes</a>
       <a href="#nosotros">Nosotros</a>
-      <a href="#planes">Planes</a>
+      <a href="#contacto">Contacto</a>
     </nav>
-    <small>© 2026 Prometeo · Implementación de Odoo · Argentina</small>
   </div>
+  <div class="container footer-bottom"><small>© 2026 Prometeo · Argentina</small></div>
 </footer>
 
 <script src="js/site.js"></script>
