@@ -120,7 +120,18 @@
     window.requestAnimationFrame(animateMarquee);
   }
 
-  // Formulario de demo — envío real vía Web3Forms
+  // Botones de cada solución: preseleccionan el interés en el formulario
+  var interes = document.getElementById('f-interes');
+  document.querySelectorAll('[data-interes]').forEach(function (a) {
+    a.addEventListener('click', function () {
+      var val = a.getAttribute('data-interes');
+      Array.prototype.forEach.call(interes.options, function (o) {
+        if (o.text === val) interes.value = o.value;
+      });
+    });
+  });
+
+  // Formulario de contacto — envío real vía Web3Forms
   var form = document.getElementById('demoForm');
   var btn = document.getElementById('formSubmit');
   var err = document.getElementById('formErr');
