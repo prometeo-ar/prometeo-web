@@ -93,7 +93,9 @@ p{text-wrap:pretty;}
 .nav-links{display:flex;gap:36px;align-items:center;}
 .nav-links a{font-size:15px;font-weight:500;color:var(--dark-muted);transition:color .2s;}
 .nav-links a:hover{color:var(--dark-text);}
-.nav .btn{padding:10px 22px;font-size:15px;}
+.nav .btn{padding:9px 20px;font-size:15px;font-weight:600;}
+.nav-links a.btn{color:#fff;}
+.nav-links a.btn:hover{color:#fff;}
 .nav-burger{display:none;background:none;border:none;cursor:pointer;width:40px;height:40px;}
 .nav-burger span{display:block;width:22px;height:2px;background:var(--dark-text);margin:5px auto;transition:.2s;}
 
