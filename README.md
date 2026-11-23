@@ -1,6 +1,6 @@
 # prometeo-web
 
-Sitio institucional de **Prometeo** — [prometeo.com.ar](https://prometeo.com.ar). Presenta las soluciones de la empresa (Odoo, software a medida, campañas de marketing, automatizaciones, tableros, integraciones, soporte) y el producto **CobraYa**.
+Sitio institucional de **Prometeo** — [prometeo.com.ar](https://prometeo.com.ar). Presenta las soluciones de la empresa (Prometeo ERP, software a medida, campañas de marketing, automatizaciones, tableros, integraciones, soporte) y el producto **CobraYa**.
 
 Sitio estático: HTML + CSS + JS sin build ni dependencias.
 
